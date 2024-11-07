@@ -1,0 +1,7 @@
+0,SGDClassifier,runs:/cbfc7142915441ff85eb1b408c13515c/sklearn.linear_model/SGDClassifier
+1,RandomForestClassifier,runs:/6c5de147109f491fb88538d1ddbcfe06/sklearn.ensemble/RandomForestClassifier
+2,SVC,runs:/562885069aae43c69223bdc81c283d1a/sklearn.svm/SVC
+3,KNeighborsClassifier,runs:/10ba08e0503648ed89833c14ba5614ca/sklearn.neighbors/KNeighborsClassifier
+4,DecisionTreeClassifier,runs:/d574491b9ac440d89203813490fbf9c7/sklearn.tree/DecisionTreeClassifier
+5,LogisticRegression,runs:/3fa8eaed40e94d719d4555e23d0ff9b9/sklearn.linear_model/LogisticRegression
+6,Perceptron,runs:/29cdb5049d5d42e293b2344b0656e486/sklearn.linear_model/Perceptron

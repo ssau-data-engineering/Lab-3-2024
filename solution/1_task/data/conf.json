@@ -1,0 +1,70 @@
+{
+    "dataset_info": {
+        "name": "titanic",
+        "data_path": "/opt/airflow/data/lr3",
+        "drop_columns": ["PassengerId", "Name", "Ticket", "Cabin"],  
+        "categorical_columns": ["Sex", "Embarked"]
+    },
+    "configs": [
+        {
+            "module": "sklearn.linear_model",
+            "classificator": "SGDClassifier",
+            "args": {
+                "loss": "log_loss",
+                "max_iter": 200
+            }
+        },
+        {
+            "module": "sklearn.ensemble",
+            "classificator": "RandomForestClassifier",
+            "args": {
+                "n_estimators": 100,
+                "max_depth": 10,
+                "random_state": 42
+            }
+        },
+        {
+            "module": "sklearn.svm",
+            "classificator": "SVC",
+            "args": {
+                "kernel": "rbf",
+                "C": 1.0,
+                "gamma": "scale"
+            }
+        },
+        {
+            "module": "sklearn.neighbors",
+            "classificator": "KNeighborsClassifier",
+            "args": {
+                "n_neighbors": 5,
+                "weights": "uniform"
+            }
+        },
+        {
+            "module": "sklearn.tree",
+            "classificator": "DecisionTreeClassifier",
+            "args": {
+                "max_depth": 5,
+                "min_samples_split": 2,
+                "random_state": 42
+            }
+        },
+        {
+            "module": "sklearn.linear_model",
+            "classificator": "LogisticRegression",
+            "args": {
+                "solver": "lbfgs",
+                "max_iter": 200,
+                "random_state": 42
+            }
+        },
+        {
+            "module": "sklearn.linear_model",
+            "classificator": "Perceptron",
+            "args": {
+                "max_iter": 200,
+                "random_state": 42
+            }
+        }
+    ]
+}
