@@ -1,0 +1,41 @@
+configs:
+  - classificator: sklearn.linear_model.LogisticRegression
+    kwargs:
+      penalty: l2
+      dual: false
+      tol: 0.0001
+      C: 1.0
+      fit_intercept: true
+      intercept_scaling: 1
+      class_weight: balanced
+      random_state: 42
+  - classificator: sklearn.tree.DecisionTreeClassifier
+    kwargs:
+      criterion: gini
+      max_depth: 5
+      min_samples_split: 2
+      min_samples_leaf: 1
+      random_state: 42
+  - classificator: sklearn.neighbors.KNeighborsClassifier
+    kwargs:
+      n_neighbors: 5
+      weights: uniform
+      algorithm: auto
+      leaf_size: 30
+      p: 2
+  - classificator: sklearn.ensemble.RandomForestClassifier
+    kwargs:
+      n_estimators: 100
+      criterion: gini
+      max_depth: 5
+      min_samples_split: 2
+      min_samples_leaf: 1
+      random_state: 42
+  - classificator: sklearn.svm.SVC
+    kwargs:
+      kernel: rbf
+      degree: 3
+      gamma: auto
+      coef0: 0.0
+      shrinking: true
+      probability: false
