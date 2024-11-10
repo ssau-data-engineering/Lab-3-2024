@@ -77,3 +77,19 @@
   * https://mlflow.org/docs/latest/tracking.html#logging-data-to-runs
   * https://mlflow.org/docs/latest/models.html
   * https://mlflow.org/docs/latest/search-runs.html
+ 
+#  Курицын Никита 6232
+# Task_1 Пайплайн, который обучает любой классификатор из sklearn по заданному набору параметров. 
+    1. Был реализован пайпайн  wait_for_new_file >> extract_audio >> transform_audio_to_text >> summarize_text >> save_to_pdf.
+    2. FileSensor(wait_for_new_file) сканировал целевую папку на наличие файл WC.mp4.
+    3. После появления файла активировался DockerOperator(extract_audio) для извлечения аудио из видеофайла. Был создан docker образ с библиотекой ffmpeg.
+    3. Далее другой DockerOperator(transform_audio_to_text) с помощью huggingface отрпавляет запросы для перевода речи в текст. Т.к. аудио было больше 30 сек. пришлось разбивать на короткие фрагменты и отправлять поочередено запросы. Был создан образ с библиотеками ffmpeg, requests, pydub.
+    4. Далее DockerOperator делал коспект по полному тексту, также с помощью запросов в huggingfaceю
+    5. Сохранение конспекта в ПДФ формат с помощью библиотеки FPDF.Был создан образ с библиотекой fpdf.
+В качестве видео была выла выбрана речь Черчилля. Результаты работы перевода в текст находится в файле text.txt, конспект в summary.txt,  ПДФ файле - result.pdf.
+![Пример изображения](https://github.com/BandooSs/Lab-2-2024/blob/main/1.PNG)
+# Task_2 Пайплайн, который выбирает лучшую модель из обученных и производит её хостинг.
+    1. Был реализован пайплайн wait_for_new_file >> read_data >> train_model.
+    2. PythonSensor(wait_for_new_file) - кастомный сканер файлов, искал появление новой директории с именем data.
+    3. DockerOperator(read_data) - считывание изображений и подготвка их к загрузке в модель (записывались в файлы с расширенем .npy).
+    4. DockerOperator(train_model) - считывал подготовленный данные, настройки модели и запускал обучение модели на считанных данных. Также вел ЛОГ по каждой эпохе (log.txt).
