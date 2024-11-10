@@ -81,7 +81,7 @@
 #  Курицын Никита 6232
 # Task_1 Пайплайн, который обучает любой классификатор из sklearn по заданному набору параметров.
 Был выбран датасет [smoke-detection-dataset](https://www.kaggle.com/datasets/deepcontractor/smoke-detection-dataset)
-    1. Был реализован пайпайн  wait_for_new_json_file >> train_models. Граф пайпланйна представлен ниже.
+    1. Был реализован пайпайн  wait_for_new_json_file >> train_models. Граф пайпланйна представлен ниже.  
 ![Пример изображения](https://github.com/BandooSs/Lab-3-2024/blob/main/data/LR_3_task1/airflow_graph.png)
     
     2. Был составлен json файл с информацией о классификаторах, а также с информацией о датасете.
