@@ -81,7 +81,7 @@
 #  Курицын Никита 6232
 # Task_1 Пайплайн, который обучает любой классификатор из sklearn по заданному набору параметров. 
     1. Был реализован пайпайн  wait_for_new_json_file >> train_models. Граф пайпланйна представлен ниже.
-   ![Пример изображения]([https://github.com/BandooSs/Lab-2-2024/blob/main/1.PNG](https://github.com/BandooSs/Lab-3-2024/blob/main/data/LR_3_task1/airflow_graph.png))
+![Пример изображения](https://github.com/BandooSs/Lab-3-2024/blob/main/data/LR_3_task1/airflow_graph.png)
     
     2. FileSensor(wait_for_new_file) сканировал целевую папку на наличие файл WC.mp4.
     3. После появления файла активировался DockerOperator(extract_audio) для извлечения аудио из видеофайла. Был создан docker образ с библиотекой ffmpeg.
