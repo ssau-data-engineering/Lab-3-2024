@@ -89,7 +89,7 @@
 ![Пример метрик](https://github.com/BandooSs/Lab-3-2024/blob/main/data/LR_3_task1/mlflow_metrics.png)
 
 # Task_2 Пайплайн, который выбирает лучшую модель из обученных и производит её хостинг.
-    1. Был реализован пайплайн wait_for_new_file >> read_data >> train_model.
-    2. PythonSensor(wait_for_new_file) - кастомный сканер файлов, искал появление новой директории с именем data.
-    3. DockerOperator(read_data) - считывание изображений и подготвка их к загрузке в модель (записывались в файлы с расширенем .npy).
-    4. DockerOperator(train_model) - считывал подготовленный данные, настройки модели и запускал обучение модели на считанных данных. Также вел ЛОГ по каждой эпохе (log.txt).
+    1. Был реализован пайплайн get_best_model.
+    2. PythonOperator(get_best_model) - вызывает функцию get_best_model(), которая считывает валидационную выборку, модели из mlflow.
+    3. Выбирает наилучшую модель по точности на валидационной выборке и переводит ее в статус 'Production'.
+![Пример метрик](https://github.com/BandooSs/Lab-3-2024/blob/main/data/LR_3_task1/mlflow_models.png)
