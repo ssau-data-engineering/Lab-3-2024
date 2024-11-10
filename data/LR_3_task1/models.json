@@ -1,0 +1,47 @@
+{   
+    "models": [
+        {
+            "module": "sklearn.linear_model",
+            "model_classificator": "LogisticRegression",
+            "args": {
+                "max_iter": 100,
+                "solver" : "saga"
+            }
+        },
+        {
+            "module": "sklearn.neighbors",
+            "model_classificator": "KNeighborsClassifier",
+            "args": {
+                "n_neighbors": 5
+            }
+        },
+        {
+            "module": "sklearn.svm",
+            "model_classificator": "SVC",
+            "args": {
+                "kernel": "linear"
+            }
+        },
+        {
+            "module": "sklearn.ensemble",
+            "model_classificator": "RandomForestClassifier",
+            "args": {
+                "n_estimators": 100,
+                "random_state": 42
+            }
+        },
+        {
+            "module": "sklearn.naive_bayes",
+            "model_classificator": "GaussianNB",
+            "args": {}
+        }
+    ],
+
+    "dataset":{
+        "name_file" : "smoke_detection_iot.csv",
+        "drop_columns": ["Unnamed: 0", "CNT", "UTC"],
+        "target_columns" : "Fire Alarm",
+        "name_valid_X_file": "x_valid.npy",
+        "name_valid_y_file": "y_valid.npy"
+    }
+}
