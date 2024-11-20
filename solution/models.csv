@@ -1,0 +1,5 @@
+0,SGDClassifier,runs:/81174274c8e343259bec0395c5ac4c5e/sklearn.linear_model
+1,GradientBoostingClassifier,runs:/797ccc19a82949ea947eeed959acca3b/sklearn.ensemble
+2,SVC,runs:/23857d92b4df4b08a59e7ee1b04bb2f4/sklearn.svm
+3,KNeighborsClassifier,runs:/e83c8d8636f9411abb2fe9ae5e26cb28/sklearn.neighbors
+4,RandomForestClassifier,runs:/1bf8fa2780044367b114a5dd48a433d7/sklearn.ensemble
