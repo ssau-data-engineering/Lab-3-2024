@@ -54,7 +54,9 @@
 
 Результаты выполнения: 
 
-![AirFlow](./images/2.png)
+ <p align="center">
+ <img width="300px" src="images/2.png" alt="qr"/>
+</p>
 
 ![MLFlow](./images/1.png)
 
@@ -68,6 +70,8 @@
 
 Результаты выполнения: 
 
-![AirFlow](./images/3.png)
+ <p align="center">
+ <img width="300px" src="images/3.png" alt="qr"/>
+</p>
 
 ![MLFlow](./images/4.png)
