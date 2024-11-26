@@ -1,0 +1,25 @@
+configs:
+  - classificator: sklearn.linear_model.LogisticRegression
+    kwargs:
+      max_iter: 1000
+      penalty: l2
+      random_state: 42
+  - classificator: sklearn.ensemble.RandomForestClassifier
+    kwargs:
+      n_estimators: 100
+      max_depth: 10
+      random_state: 42
+  - classificator: sklearn.svm.SVC
+    kwargs:
+      kernel: rbf
+      gamma: scale
+      random_state: 42
+  - classificator: sklearn.tree.DecisionTreeClassifier
+    kwargs:
+      criterion: gini
+      max_depth: 6
+      random_state: 42
+  - classificator: sklearn.neighbors.KNeighborsClassifier
+    kwargs:
+      n_neighbors: 8
+      weights: uniform
