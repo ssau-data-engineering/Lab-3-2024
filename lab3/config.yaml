@@ -1,0 +1,26 @@
+configs:
+  - classifier: sklearn.tree.DecisionTreeClassifier
+    kwargs:
+      max_depth: 7
+      min_samples_leaf: 5
+  - classifier: sklearn.ensemble.RandomForestClassifier
+    kwargs:
+      n_estimators: 200
+      criterion: gini
+      max_depth: 7
+      min_samples_leaf: 5
+  - classifier: sklearn.neighbors.KNeighborsClassifier
+    kwargs:
+      n_neighbors: 3
+  - classifier: sklearn.svm.SVC
+    kwargs:
+      kernel: rbf
+      degree: 3
+  - classifier: sklearn.linear_model.LogisticRegression
+    kwargs:
+      penalty: l2
+      tol: 0.001
+      C: 1.0
+      fit_intercept: true
+      intercept_scaling: 1
+      class_weight: balanced
