@@ -49,4 +49,16 @@
 
 ![image](https://github.com/user-attachments/assets/bba5b86c-6e69-4a9f-a131-9b86295d2256)
 
+## Hosting
+
+Захостить модель не вышло, хотя задача казалась не такой и сложной.
+В некоторых моментах думал что получилось, но запрос отправить я не смог.
+
+Я думаю что Mlflow нужно развернуть отдельно и тогда наверное все получится.
+
+```
+mlflow models build-docker --model-uri models:/SGDClassifier/production
+
+```
+
 
