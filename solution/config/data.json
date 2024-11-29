@@ -1,0 +1,13 @@
+{
+  "classificator": "sklearn.neural_network.MLPClassifier",
+  "kwargs": {
+    "hidden_layer_sizes": [64, 128, 64],
+    "activation": "tanh",
+    "solver": "sgd",
+    "learning_rate": "invscaling",
+    "learning_rate_init": 0.01,
+    "max_iter": 300,
+    "early_stopping": true,
+    "random_state": 42
+  }
+}
