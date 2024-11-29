@@ -29,7 +29,8 @@
 
 И в mlflow можно наблюдать все проведенные эксперименты с нашими модельками:
 
-![image](https://github.com/user-attachments/assets/1b79fdcf-bf5d-48e6-b27e-85a6d5a88bcf)
+![image](https://github.com/user-attachments/assets/a3349921-ebcd-446a-9ac4-fd1a9c204385)
+
 
 ## Часть 2 "Production"
 
