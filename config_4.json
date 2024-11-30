@@ -1,0 +1,10 @@
+{
+    "classifier_name": "sklearn.ensemble.GradientBoostingClassifier",
+    "kwargs": {
+        "loss": "log_loss",
+        "learning_rate": 0.1,
+        "n_estimators": 150,
+        "max_depth": 3,
+        "min_samples_split": 2
+    }
+}

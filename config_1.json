@@ -1,0 +1,10 @@
+{
+    "classifier_name": "sklearn.neural_network.MLPClassifier",
+    "kwargs": {
+        "hidden_layer_sizes": [20, 100, 20],
+        "activation": "relu",
+        "solver": "adam",
+        "learning_rate": "constant",
+        "learning_rate_init": 0.001
+    }
+}

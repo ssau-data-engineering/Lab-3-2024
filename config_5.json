@@ -1,0 +1,10 @@
+{
+    "classifier_name": "sklearn.neighbors.KNeighborsClassifier",
+    "kwargs": {
+        "n_neighbors": 5,
+        "weights": "uniform",
+        "algorithm": "auto",
+        "leaf_size": 30,
+        "p": 2
+    }
+}
