@@ -1,0 +1,47 @@
+{
+    "configs": [
+        {
+            "module": "sklearn.linear_model",
+            "classificator": "SGDClassifier",
+            "args": {
+                "loss": "log_loss",
+                "max_iter": 300
+            }
+        },
+        {
+            "module": "sklearn.ensemble",
+            "classificator": "GradientBoostingClassifier",
+            "args": {
+                "n_estimators": 30,
+                "criterion": "squared_error",
+                "min_samples_leaf": 0.5
+            }
+        },
+        {
+            "module": "sklearn.svm",
+            "classificator": "SVC",
+            "args": {
+                "kernel": "sigmoid",
+                "gamma": "auto"
+            }
+        },
+        {
+            "module": "sklearn.neighbors",
+            "classificator": "KNeighborsClassifier",
+            "args": {
+                "n_neighbors": 7,
+                "weights": "distance",
+                "algorithm": "kd_tree"
+            }
+        },
+        {
+            "module": "sklearn.ensemble",
+            "classificator": "RandomForestClassifier",
+            "args": {
+                "n_estimators": 30,
+                "criterion": "log_loss",
+                "max_depth": 10
+            }
+        }
+    ]
+}
