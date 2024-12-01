@@ -80,47 +80,56 @@
 <h1>Результаты</h1>
 <p>Модели из config.yaml</p>
 <ul>
-<li>
-    <p>Логистическая регрессия (Logistic Regression)</p>
-    <p>Гиперпараметры:</p>
-    <ol>
-        <li>C</li>
-        <li>solver</li>
-        <li>max_iter</li>
-    <ol>
-</li>
-<li>
-    <p>Наивный байесовский классификатор (Gaussian Naive Bayes)</p>
-    <p>Гиперпараметры:</p>
-    <ol>
-        <li>var_smoothing</li>
-    <ol>
-</li>
-<li>
-    <p>Метод k ближайших соседей (K-Nearest Neighbors)</p>
-    <p>Гиперпараметры:</p>
-    <ol>
-        <li>n_neighbors</li>
-        <li>weights</li>
-        <li>algorithm</li>
-    <ol>
-</li>
-<li>
-    <p>Метод опорных векторов (Support Vector Machine)</p>
-    <p>Гиперпараметры:</p>
-    <ol>
-        <li>C</li>
-        <li>kernel</li>
-        <li>gamma</li>
-    <ol>
-</li>
-<li>
-    <p>Дерево решений (Decision Tree)</p>
-    <p>Гиперпараметры:</p>
-    <ol>
-        <li>max_depth</li>
-        <li>random_state</li>
-        <li>class_weight</li>
-    <ol>
-</li>
+    <li>
+        <p>Логистическая регрессия (Logistic Regression)</p>
+        <p>Гиперпараметры:</p>
+        <ol>
+            <li>C</li>
+            <li>solver</li>
+            <li>max_iter</li>
+        </ol>
+    </li>
+    <li>
+        <p>Наивный байесовский классификатор (Gaussian Naive Bayes)</p>
+        <p>Гиперпараметры:</p>
+        <ol>
+            <li>var_smoothing</li>
+        </ol>
+    </li>
+    <li>
+        <p>Метод k ближайших соседей (K-Nearest Neighbors)</p>
+        <p>Гиперпараметры:</p>
+        <ol>
+            <li>n_neighbors</li>
+            <li>weights</li>
+            <li>algorithm</li>
+        </ol>
+    </li>
+    <li>
+        <p>Метод опорных векторов (Support Vector Machine)</p>
+        <p>Гиперпараметры:</p>
+        <ol>
+            <li>C</li>
+            <li>kernel</li>
+            <li>gamma</li>
+        </ol>
+    </li>
+    <li>
+        <p>Дерево решений (Decision Tree)</p>
+        <p>Гиперпараметры:</p>
+        <ol>
+            <li>max_depth</li>
+            <li>random_state</li>
+            <li>class_weight</li>
+        </ol>
+    </li>
 </ul>
+
+<h1>Графики метрик</h1>
+<img src="./result_image/accurasy.png"/>
+<img src="./result_image/f1_score.png"/>
+<img src="./result_image/precision.png"/>
+<img src="./result_image/recall.png"/>
+<h1>Второй пункт результат в airflow и mlFlow</h1>
+<img src="./result_image/best_models_result.png"/>
+<img src="./result_image/choose_best_model_work.png"/>
