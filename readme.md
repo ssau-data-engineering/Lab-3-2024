@@ -77,3 +77,50 @@
   * https://mlflow.org/docs/latest/tracking.html#logging-data-to-runs
   * https://mlflow.org/docs/latest/models.html
   * https://mlflow.org/docs/latest/search-runs.html
+<h1>Результаты</h1>
+<p>Модели из config.yaml</p>
+<ul>
+<li>
+    <p>Логистическая регрессия (Logistic Regression)</p>
+    <p>Гиперпараметры:</p>
+    <ol>
+        <li>C</li>
+        <li>solver</li>
+        <li>max_iter</li>
+    <ol>
+</li>
+<li>
+    <p>Наивный байесовский классификатор (Gaussian Naive Bayes)</p>
+    <p>Гиперпараметры:</p>
+    <ol>
+        <li>var_smoothing</li>
+    <ol>
+</li>
+<li>
+    <p>Метод k ближайших соседей (K-Nearest Neighbors)</p>
+    <p>Гиперпараметры:</p>
+    <ol>
+        <li>n_neighbors</li>
+        <li>weights</li>
+        <li>algorithm</li>
+    <ol>
+</li>
+<li>
+    <p>Метод опорных векторов (Support Vector Machine)</p>
+    <p>Гиперпараметры:</p>
+    <ol>
+        <li>C</li>
+        <li>kernel</li>
+        <li>gamma</li>
+    <ol>
+</li>
+<li>
+    <p>Дерево решений (Decision Tree)</p>
+    <p>Гиперпараметры:</p>
+    <ol>
+        <li>max_depth</li>
+        <li>random_state</li>
+        <li>class_weight</li>
+    <ol>
+</li>
+</ul>
